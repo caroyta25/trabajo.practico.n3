@@ -1,147 +1,55 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #f8fbf9;
+    background: #f7f7f7;
     color: #222;
-    line-height: 1.5;
 }
 
-/* ---------- Header ---------- */
-.site-header {
-    background-color: #2b8a3e;   /* verde veterinario */
-    color: #fff;
+header, footer {
+    background: #0078d7;
+    color: white;
     text-align: center;
-    padding: 24px 12px;
-}
-.titulo-principal {
-    font-size: 34px;
-    margin: 0;
-}
-.subtitulo {
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 6px;
+    padding: 15px;
 }
 
-/* Menú */
 .menu {
     list-style: none;
-    padding: 10px 0 0 0;
-    margin: 8px 0 0 0;
+    padding: 0;
 }
-.menu-item {
+.menu li {
     display: inline-block;
-    margin: 0 18px;
-    font-weight: bold;
-    color: #e6ffef;
-    cursor: pointer;
-}
-.menu-item:hover {
-    text-decoration: underline;
+    margin: 0 15px;
 }
 
-/* ---------- Introducción ---------- */
-.intro h1 { font-size: 28px; text-align:center; margin-top: 26px; color: #1d5e2e; }
-.intro h2 { font-size: 20px; text-align:center; margin-top: 8px; color: #444; }
-.intro h3 { font-size: 16px; text-align:center; margin-top: 6px; color: #666; }
-
-/* ---------- GALERÍA (FLEXBOX) ---------- */
-.galeria-contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
 .galeria {
     display: flex;
-    gap: 28px;
     justify-content: center;
-    align-items: flex-start;
+    gap: 20px;
     flex-wrap: wrap;
-    width: 90%;
-    max-width: 1100px;
+    margin: 30px;
 }
 
-/* Tarjeta de servicio */
 .servicio {
-    background-color: #fff;
-    border-radius: 10px;
-    width: 320px;
-    padding: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    background: white;
+    width: 300px;
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-/* Imagen de servicio */
-.servicio-img {
+.servicio img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* Descripción */
-.descripcion {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #444;
-}
-
-/* ---------- MAPA ---------- */
 .mapa {
     text-align: center;
-    margin: 26px 0 40px 0;
-}
-.mapa h2 {
-    font-size: 20px;
-    margin-bottom: 12px;
-    color: #1d5e2e;
+    margin: 30px;
 }
 .mapa iframe {
-    max-width: 90%;
-    height: 320px;
-    border-radius: 8px;
-    border: 0;
-}
-
-/* ---------- LISTA DE SERVICIOS ---------- */
-.servicios {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.lista-servicios {
-    list-style: none;
-    padding: 0;
-    margin: 12px auto;
-    display: inline-block;
-    text-align: left;
-}
-.lista-servicios li {
-    margin: 8px 0;
-    padding-left: 16px;
-    position: relative;
-}
-.lista-servicios li::before {
-    content: "🐾";
-    position: absolute;
-    left: -16px;
-    color: #2b8a3e;
-    font-size: 18px;
-}
-
-/* ---------- FOOTER ---------- */
-.site-footer {
-    background-color: #1d5e2e;
-    color: #fff;
-    text-align: center;
-    padding: 14px 10px;
-    font-size: 14px;
+    width: 80%;
+    height: 300px;
+    border: none;
 }
